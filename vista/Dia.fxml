@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="260.0" style="-fx-background-color: #80BFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.DiaController">
+   <children>
+      <Label fx:id="label_Fecha" layoutX="83.0" layoutY="14.0" text="2024-01-01" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <ImageView fx:id="imagen_Tiempo" fitHeight="100.0" fitWidth="70.0" layoutX="95.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@estadosCielo/Despejado.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="temperatura_Max" layoutX="99.0" layoutY="178.0" text="TEMPERATURA MÁXIMA" />
+      <Label fx:id="temperatura_Min" layoutX="101.0" layoutY="204.0" text="TEMPERATURA MÍNIMA" />
+      <Label fx:id="label_estadoCielo" alignment="CENTER" contentDisplay="CENTER" layoutY="137.0" prefHeight="19.0" prefWidth="260.0" text="Intervalos nubosos con lluvia escasa" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="51.0" layoutX="33.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/temperatura.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="51.0" layoutX="33.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/prob__lluvia.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_probPrec" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="271.0" prefHeight="17.0" prefWidth="51.0" text="PROBABILIDAD PREC." textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="51.0" layoutX="140.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ultravioleta.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_UV" alignment="CENTER" contentDisplay="CENTER" layoutX="181.0" layoutY="271.0" prefHeight="17.0" prefWidth="51.0" text="PROBABILIDAD PREC." textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="51.0" layoutX="25.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/viento.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="label_direccionViento" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="93.0" layoutY="343.0" text="DIRECCION: 0" textAlignment="RIGHT" />
+      <Label fx:id="label_velocidadViento" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="91.0" layoutY="369.0" text="VELOCIDAD: N" />
+      <ImageView fx:id="imagen_direccionViento" fitHeight="60.0" fitWidth="51.0" layoutX="181.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/viento.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

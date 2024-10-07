@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1920.0" style="-fx-background-color: #3EA9EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AemetController">
+	
+	<children>
+      <ComboBox fx:id="comboBox_comunidad" layoutX="675.0" layoutY="212.0" prefHeight="25.0" prefWidth="186.0" styleClass="combo-box" stylesheets="@css/application.css" />
+      <ComboBox fx:id="comboBox_provincia" layoutX="881.0" layoutY="212.0" prefHeight="25.0" prefWidth="186.0" />
+      <ComboBox fx:id="comboBox_municipio" layoutX="1086.0" layoutY="212.0" prefHeight="25.0" prefWidth="186.0" />
+      <Button fx:id="boton_Guardar" layoutX="935.0" layoutY="271.0" mnemonicParsing="false" prefWidth="85.0" stylesheets="@css/application.css" text="Buscar" />
+      <TextField fx:id="textField_municipio" layoutX="892.0" layoutY="146.0" onKeyPressed="#pulsarTecla" />
+      <ImageView fitHeight="331.0" fitWidth="285.0" layoutX="213.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icono_aplicacion.png" />
+         </image>
+      </ImageView>
+   
+      <fx:include fx:id="dia_1" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_2" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_3" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="555.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_4" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="820.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_5" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="1087.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_6" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="1355.0" AnchorPane.topAnchor="450.0" />
+      <fx:include fx:id="dia_7" prefHeight="450.0" prefWidth="250.0" source="Dia.fxml" AnchorPane.leftAnchor="1625.0" AnchorPane.topAnchor="450.0" />
+      <ImageView fx:id="imagen_Sprite" fitHeight="211.0" fitWidth="243.0" layoutX="1551.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/error.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="velocidad" blockIncrement="5.0" layoutX="1580.0" layoutY="240.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+   
+	</children>
+
+</AnchorPane>
